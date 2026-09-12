@@ -52,12 +52,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className={cn(
-                  "text-sm font-medium underline underline-offset-[6px] decoration-2 transition-colors",
-                  scrolled
-                    ? "text-brown decoration-brown/60 hover:text-navy hover:decoration-navy"
-                    : "text-brown-light decoration-brown-light/70 hover:text-white hover:decoration-white",
-                )}
+                className="text-sm font-medium text-[#0000EE] underline decoration-[#0000EE] underline-offset-[6px] decoration-2 transition-opacity hover:opacity-80"
               >
                 {link.label}
               </a>
