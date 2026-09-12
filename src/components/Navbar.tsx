@@ -53,12 +53,13 @@ export default function Navbar() {
               <a
                 href={link.href}
                 className={cn(
-                  "group relative text-sm font-medium transition-colors",
-                  scrolled ? "text-ink/80 hover:text-navy" : "text-white/90 hover:text-white",
+                  "text-sm font-medium underline underline-offset-[6px] decoration-2 transition-colors",
+                  scrolled
+                    ? "text-brown decoration-brown/60 hover:text-navy hover:decoration-navy"
+                    : "text-brown-light decoration-brown-light/70 hover:text-white hover:decoration-white",
                 )}
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 h-px w-0 bg-brown transition-all duration-300 group-hover:w-full" />
               </a>
             </li>
           ))}
